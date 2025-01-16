@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo-element
+    </title>
+    <style>
+        /* p::before {
+            content: "Hello Sparsh ";
+            color: red;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: "Hello Sparsh ";
+            color: red;
+            font-weight: bold;
+        } */
+
+
+        /* p::first-line {
+            color: blue;
+            font-weight: bold;
+        } */
+
+        /* p::first-letter {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        } */
+
+        p::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        input {
+            background-color: yellow;
+        }
+
+        input::placeholder {
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Type here..">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente autem
+        incidunt dolorem
+        suscipit pariatur
+        asperiores quaerat natus aut saepe impedit provident sit aspernatur tenetur enim odio, vero quasi adipisci?</p>
+    <!-- Pseudo-element -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+</body>
+
+</html>
