@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        button:active {
+            background-color: gray;
+
+        }
+
+        input:focus {
+            background-color: red;
+        }
+
+        /* ul li:nth-child(odd) {
+            background-color: red;
+            color: white;
+        }
+
+        ul li:nth-child(even) {
+            background-color: blue;
+            color: white;
+        } */
+
+        /* ul li:nth-of-type(3n) {
+            background-color: yellow;
+            color: black;
+        }
+
+        ul li:first-child {
+            background-color: red;
+            color: black;
+        }
+
+        ul li:last-child {
+            background-color: red;
+            color: black;
+        } */
+
+        ul li:not(.useNot) {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <button>Click me </button>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li class="useNot">Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+</body>
+
+</html>
