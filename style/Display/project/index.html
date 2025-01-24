@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            justify-content: space-around;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* section1 */
+        .section1 {
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .text {
+            margin-top: 40px;
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+            ;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGONAME</div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Cotnact</a></li>
+            <li class="services"><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- HeroSection -->
+    <div class="section1">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero voluptas, porro nesciunt
+                voluptatum natus quis nobis quibusdam blanditiis fugit dignissimos a sed reiciendis quos accusantium
+                magni ea! Eius, repellendus.</p>
+            <button>Click me</button>
+        </div>
+
+        <div class="image">
+            <img src="../../../img/img1.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
