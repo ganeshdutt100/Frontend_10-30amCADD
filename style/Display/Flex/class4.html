@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* section1 */
+        .sec1 {
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .text {
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGONAME</div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li class="contact"><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- section1 -->
+    <div class="sec1">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi at placeat ex accusantium dolore
+                repudiandae impedit cum, officia accusamus corrupti enim rem quo esse dicta iste mollitia natus maxime
+                blanditiis.</p>
+            <button>Click me</button>
+        </div>
+
+        <div class="image">
+            <img src="../../../img/img1.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
