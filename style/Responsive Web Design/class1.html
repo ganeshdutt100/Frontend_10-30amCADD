@@ -76,6 +76,22 @@
             display: none;
         }
 
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section1 img {
+            width: 500px;
+            height: 500px;
+        }
+
+        .text p {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
 
         /* phone size */
         @media only screen and (max-width: 1000px) {
@@ -97,12 +113,23 @@
             ul {
                 gap: 0px;
             }
+
+            .section1 img {
+                width: 400px;
+                height: 400px;
+            }
         }
 
         @media only screen and (max-width: 700px) {
 
             ul {
                 display: none;
+            }
+
+
+            .section1 {
+                flex-direction: column-reverse;
+                align-items: center;
             }
 
             /* .btn {
@@ -112,6 +139,14 @@
             .bar {
                 font-size: 30px;
                 display: block;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .section1 img {
+                width: 300px;
+                height: 300px;
             }
         }
     </style>
@@ -136,6 +171,22 @@
             <button>Login</button>
         </div>
     </nav>
+    <!-- <div class="section1"></div> -->
+    <div class="section1">
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque atque quia sequi, explicabo vel
+                repellendus nostrum laboriosam quas, cumque aspernatur ab obcaecati est nulla eveniet possimus quidem
+                at? Sapiente, placeat.</p>
+            <div class="">
+                <button>Register </button>
+                <button>Login</button>
+
+            </div>
+        </div>
+        <img src="../../img/img1.jpg" alt="">
+    </div>
+
 
 </body>
 
