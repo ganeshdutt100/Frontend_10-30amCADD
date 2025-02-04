@@ -93,6 +93,10 @@
             line-height: 1.5;
         }
 
+        .img2 {
+            display: none;
+        }
+
         /* phone size */
         @media only screen and (max-width: 1000px) {
 
@@ -140,6 +144,14 @@
                 font-size: 30px;
                 display: block;
             }
+
+            .img2 {
+                display: block;
+            }
+
+            .img1 {
+                display: none;
+            }
         }
 
         @media only screen and (max-width: 500px) {
@@ -184,7 +196,8 @@
 
             </div>
         </div>
-        <img src="../../img/img1.jpg" alt="">
+        <img class="img1" src="../../img/img1.jpg" alt="">
+        <img class="img2" src="../../img/img2.jpg" alt="">
     </div>
 
 
