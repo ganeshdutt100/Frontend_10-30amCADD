@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            display: flex;
+            background-color: #139bab;
+            color: white;
+            padding: 10px 20px;
+            justify-content: space-around;
+            /* position: fixed;
+            width: 100%;
+            top: 0; */
+        }
+
+        .logo {
+            font-size: 24px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+
+        }
+
+        ul li a:hover {
+            color: #139bab;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .btn button {
+            background-color: #f1f1f1;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn button:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.228);
+
+        }
+
+        .bar {
+            font-size: 30px;
+            display: none;
+        }
+
+
+        /* phone size */
+        @media only screen and (max-width: 1000px) {
+
+            /* .btn {
+                display: none;
+            } */
+            ul {
+                gap: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 850px) {
+
+            .btn {
+                display: none;
+            }
+
+            ul {
+                gap: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+
+            ul {
+                display: none;
+            }
+
+            /* .btn {
+                display: flex;
+            } */
+
+            .bar {
+                font-size: 30px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGONAME</div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered bar"></i>
+        </div>
+        <div class="btn">
+            <button>Register </button>
+            <button>Login</button>
+        </div>
+    </nav>
+
+</body>
+
+</html>
