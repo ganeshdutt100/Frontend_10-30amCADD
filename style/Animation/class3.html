@@ -12,8 +12,19 @@
             background-color: rgb(0, 34, 255);
             transition: background-color 1s;
             overflow: hidden;
+            position: relative;
         }
 
+        p {
+            color: white;
+            position: absolute;
+            top: -120px;
+            transition: all .4s linear;
+        }
+
+        .box:hover p {
+            top: 0px;
+        }
 
         .box img {
             width: 100%;
@@ -31,7 +42,9 @@
 
 <body>
     <div class="box">
-        <img src="../../img/img1.jpg" alt="">
+        <!-- <img src="../../img/img1.jpg" alt=""> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cupiditate voluptatum quos ratione atque quae,
+            commodi earum? Quibusdam quis hic quo id consequatur, dicta accusamus qui dolorem ducimus vitae rerum!</p>
     </div>
 </body>
 
