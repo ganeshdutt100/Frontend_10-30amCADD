@@ -701,17 +701,11 @@
   .m-20 {
     margin: calc(var(--spacing) * 20);
   }
-  .m-40 {
-    margin: calc(var(--spacing) * 40);
-  }
   .mx-auto {
     margin-inline: auto;
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -878,9 +872,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-3xs {
-    width: var(--container-3xs);
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
@@ -892,9 +883,6 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
@@ -1413,9 +1401,6 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1573,11 +1558,8 @@
   .bg-blue-200 {
     background-color: var(--color-blue-200);
   }
-  .bg-blue-400 {
-    background-color: var(--color-blue-400);
-  }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -1976,9 +1958,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-emerald-700 {
-    color: var(--color-emerald-700);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -2498,6 +2477,11 @@
       outline-style: none;
     }
   }
+  .sm\:bg-black {
+    @media (width >= 40rem) {
+      background-color: var(--color-black);
+    }
+  }
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -2516,6 +2500,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:bg-green-700 {
+    @media (width >= 48rem) {
+      background-color: var(--color-green-700);
     }
   }
   .lg\:mt-0 {
@@ -2538,6 +2527,11 @@
       width: calc(4/5 * 100%);
     }
   }
+  .lg\:bg-red-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-red-500);
+    }
+  }
   .lg\:py-6 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 6);
@@ -2546,6 +2540,11 @@
   .lg\:pl-10 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:bg-amber-800 {
+    @media (width >= 80rem) {
+      background-color: var(--color-amber-800);
     }
   }
 }
