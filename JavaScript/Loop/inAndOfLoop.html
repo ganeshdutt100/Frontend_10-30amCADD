@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let object = {
+            name: "John Doe",
+            age: 30,
+            city: "New York",
+            address: "Dehradun"
+        }
+        // document.write("Name: " + object.name + "<br>");
+        // document.write("Age: " + object.age + "<br>");
+        // document.write("City: " + object.city + "<br>");
+        for (let values in object) {
+            document.write(values + ": " + object[values] + "<br>");
+        }
+
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (let values of array) {
+            document.write(values + "    ");
+        }
+
+
+    </script>
+</body>
+
+</html>
