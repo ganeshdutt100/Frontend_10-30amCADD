@@ -8,16 +8,35 @@
 </head>
 
 <body>
+    <button onclick="print()">Add</button>
 
     <script>
-        let num1 = Number(prompt("Enter your First Number")) // "98"
-        let num2 = Number(prompt("Enter your Second Number")) // "7"
-        // alert(+num1 + +num2);
-        // alert(Number(num1) + Number(num2));
-        let arrowFunction = (a, b) => {
-            return a + b;
+        // let num1 = Number(prompt("Enter your First Number")) // "98"
+        // let num2 = Number(prompt("Enter your Second Number")) // "7"
+        // // alert(+num1 + +num2);
+        // // alert(Number(num1) + Number(num2));
+        // let arrowFunction = (a, b) => {
+        //     return a + b;
+        // }
+        // alert(arrowFunction(num1, num2))
+
+        // (function () {
+        //     document.writeln("Hello World");
+
+        // })
+        //     ();
+
+        let sum = (a) => {
+            return ++a;
+
         }
-        alert(arrowFunction(num1, num2))
+
+        let print = () => {
+            // alert(sum(5))
+            console.log(sum(5));
+
+        }
+
     </script>
 </body>
 
