@@ -9,14 +9,39 @@
 
 <body>
     <script>
-        function fun(name) {
-            console.log("Hello World" + name);
-            // document.writeln("Hello World" + name);
+        // function fun(name) {
+        //     console.log("Hello World" + name);
+        //     // document.writeln("Hello World" + name);
+
+        // }
+        // fun(" Ganesh ");
+        // fun.call("null", "Ganesh ")
+        // call syntax    call("null", "Value ")
+
+
+        function Emp(id, name) {
+            this.id = id;   // loop
+            this.name = name;  // function 
+        }
+
+        function PerEmp(id, name, salary) {
+
+            Emp.call(this, id, name)
+            this.salary = salary;
 
         }
-        // fun(" Ganesh ");
-        fun.call("null", "Ganesh ")
-        // call syntax    call("null", "Value ")
+
+        function TemEmp(id, name, salary) {
+            PerEmp.call(this, id, name, salary)
+
+        }
+
+        let emp = new PerEmp(2, "Ganesh", 123456)
+        console.log(emp.id, emp.name, emp.salary)
+
+        let Temp = new TemEmp(1, "XYZ", 123456)
+        console.log(Temp.id, Temp.name, Temp.salary)
+
     </script>
 </body>
 
