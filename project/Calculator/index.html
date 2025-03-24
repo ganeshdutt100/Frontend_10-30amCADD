@@ -37,6 +37,10 @@
                     result.innerHTML = Number(num1) * Number(num2);
                     break;
                 case "/":
+                    if (num2 == 0) {
+                        result.innerHTML = "Cannot divide by zero";
+                        break;
+                    }
                     result.innerHTML = Number(num1) / Number(num2);
                     break;
                 default:
