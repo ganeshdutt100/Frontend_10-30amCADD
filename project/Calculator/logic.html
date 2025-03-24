@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text"> -->
+    <script>
+        let num = Number(prompt("Please Enter your first Number :"))
+        let operator = prompt("Please Enter your operator (+, -, *, /) :")
+        let num2 = Number(prompt("Please Enter your second Number :"))
+
+        let result;
+
+        switch (operator) {
+            case "+":
+                result = num + num2;
+                alert(result);
+                console.log(result);
+                break;
+            case "-":
+                result = num - num2;
+                alert(result);
+                console.log(result);
+                break;
+            case "*":
+                result = num * num2;
+                alert(result);
+                console.log(result);
+                break;
+            case "/":
+                result = num / num2;
+                alert(result);
+                console.log(result);
+                break;
+            default:
+                console.log("Invalid Operator");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -8,40 +8,44 @@
 </head>
 
 <body>
-    <!-- <input type="text"> -->
+    <input type="text" placeholder="Enter First Number" class="firstInput"> <br><br>
+    <input type="text" placeholder="Enter Operator + , - , * , /" class="operator"> <br> <br>
+    <input type="text" placeholder="Enter Second Number" class="secondInput"> <br> <br>
+    <p class="output">loading...</p>
+    <button onclick="calculator()">Calculate</button>
+
     <script>
-        let num = Number(prompt("Please Enter your first Number :"))
-        let operator = prompt("Please Enter your operator (+, -, *, /) :")
-        let num2 = Number(prompt("Please Enter your second Number :"))
+        let calculator = () => {
 
-        let result;
+            let num1 = document.querySelector(".firstInput").value;
 
-        switch (operator) {
-            case "+":
-                result = num + num2;
-                alert(result);
-                console.log(result);
-                break;
-            case "-":
-                result = num - num2;
-                alert(result);
-                console.log(result);
-                break;
-            case "*":
-                result = num * num2;
-                alert(result);
-                console.log(result);
-                break;
-            case "/":
-                result = num / num2;
-                alert(result);
-                console.log(result);
-                break;
-            default:
-                console.log("Invalid Operator");
+            let op = document.querySelector(".operator").value;
+
+            let num2 = document.querySelector(".secondInput").value;
+
+            let result = document.querySelector(".output")
+
+
+            switch (op) {
+                case "+":
+                    result.innerHTML = Number(num1) + Number(num2);
+                    break;
+                case "-":
+                    result.innerHTML = Number(num1) - Number(num2);
+                    break;
+                case "*":
+                    result.innerHTML = Number(num1) * Number(num2);
+                    break;
+                case "/":
+                    result.innerHTML = Number(num1) / Number(num2);
+                    break;
+                default:
+                    result.innerHTML = "Invalid Operator";
+            }
         }
-    </script>
 
+
+    </script>
 </body>
 
 </html>
