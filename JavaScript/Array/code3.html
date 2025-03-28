@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let fruits = ['apple', 'banana', 'orange'];
+
+        // for (let values of fruits.entries()) {
+        //     console.log(values);
+
+        // }
+
+        let numbers = [1, 79, 3, 4, 5];
+
+        // let output = numbers.every(x => x % 2 == 0)
+        // let output = numbers.some(x => x % 2 == 0)
+        // let output = numbers.filter(x => x % 2 == 0)
+        // let output = numbers.find(x => x % 2 == 0)
+        // let output = numbers.findIndex(x => x % 2 == 0)
+        // let output = numbers.map(x => x + 4)
+        // let output = numbers.reduce((acc, num) => acc + num)
+        // numbers.forEach(x => console.log(x))
+        // console.log(output);
+
+        for (let x of numbers.keys()) {
+            console.log(x);
+        }
+        for (let x of numbers.values()) {
+            console.log(x);
+        }
+
+
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+
+            sum += numbers[i]
+            // sum = sum + numbers[i]
+
+        }
+        console.log(sum);
+
+
+        // let arrayLike = {
+        //     length: 3,
+        //     0: 'apple',
+        //     1: 'banana',
+        //     2: 'orange'
+        // };
+
+        // let output = Array.from(arrayLike);
+        // console.log(output);
+
+
+        let newArray = Array.of('apple', 'banana', 'orange');
+        console.log(newArray);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

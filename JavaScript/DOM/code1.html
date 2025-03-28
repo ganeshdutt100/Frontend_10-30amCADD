@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="demo">loading..</p>
+    <p class="demo">loading..</p>
+    <p class="demo">loading..</p>
+    <p class="demo">loading..</p>
+    <p class="demo">loading..</p>
+
+    <h1 id="sparsh">loading.....</h1>
+    <button onclick="fun()">Click me </button>
+
+    <script>
+        function fun() {
+            document.querySelector(".demo").innerHTML = "Ganesh"
+
+            // document.querySelector("#sparsh").innerHTML = "Ganesh"
+
+            document.querySelector("h1").innerHTML = "Ganesh"
+
+            let value = document.querySelector(".demo");
+            // document.writeln(value);
+            value.style.color = "red"
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
