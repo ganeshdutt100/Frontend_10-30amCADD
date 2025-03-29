@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>loading....</p>
+<button onclick="arrFun()">Click me </button>
+
+<body>
+    <script>
+        // let arrFun = () => {
+        //     let value = ["r", "p", "s"]
+        //     let a = value[Math.floor(Math.random() * 3)];
+        //     document.querySelector("p").innerHTML = a
+        // }
+
+
+        function playGame(userChoice) {
+            const choices = ["rock", "paper", "scissors"];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            console.log(`You chose: ${userChoice}`);
+            console.log(`Computer chose: ${computerChoice}`);
+
+            if (userChoice === computerChoice) {
+                console.log("It's a tie!");
+            } else if (
+                (userChoice === "rock" && computerChoice === "scissors") ||
+                (userChoice === "paper" && computerChoice === "rock") ||
+                (userChoice === "scissors" && computerChoice === "paper")
+            ) {
+                console.log("You win!");
+            } else {
+                console.log("You lose!");
+            }
+        }
+
+        // Example: Play by calling playGame("rock"), playGame("paper"), or playGame("scissors")
+        playGame("scissors");
+
+        let a = "sparsh"
+        // document.writeln("i am " + a);
+        // document.writeln(`i am ${a}`);
+
+
+
+
+    </script>
+</body>
+
+</html>
