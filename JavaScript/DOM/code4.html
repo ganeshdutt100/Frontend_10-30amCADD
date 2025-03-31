@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .after-CSS {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+</style>
+
+<body>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ipsum! Minus quo id quisquam unde
+        optio corrupti
+        et, laboriosam dicta tenetur, quia, debitis adipisci incidunt sequi! Cumque hic dolores quam?</p>
+    <button onclick="afterClick()">ADD CSS</button>
+    <button onclick="afterClickRemove()">REMOVE CSS</button>
+    <script>
+        let afterClick = () => {
+            let demo = document.querySelector(".demo");
+            demo.classList.add("after-CSS")
+        }
+        let afterClickRemove = () => {
+            let demo = document.querySelector(".demo");
+            demo.classList.remove("after-CSS")
+        }
+    </script>
+</body>
+
+</html>
