@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <h1>Home Page</h1>
+
+    <a href="page1.html">Go to Page 1</a>
+    <a href="page2.html">Go to Page 2</a>
+
+    <br><br>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+
+    <script>
+        function goBack() {
+            history.back(); // Navigate to the previous page
+        }
+
+        function goForward() {
+            history.forward(); // Navigate to the next page
+        }
+    </script>
+
+</body>
+
+</html>
